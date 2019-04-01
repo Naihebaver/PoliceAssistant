@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:padding="3dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Реєстр. номер ТЗ:"
+        android:textColor="@color/colorText"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/n_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="AO 1234 AA"
+        android:textColor="@color/colorText"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Тип порушення:"
+        android:textColor="@color/colorText"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/n_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Невиконання вимог поліцейського"
+        android:textColor="@color/colorText"
+        android:textSize="16sp" />
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:text="Місцезнаходження:"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:textColor="@color/colorText"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/n_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text=""
+        android:textStyle="bold"
+        android:textColor="@color/colorText"
+        android:textSize="16sp" />
+
+</LinearLayout>

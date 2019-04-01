@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="Головна"
+            android:id="@+id/home_id"
+            android:icon="@drawable/ic_home">
+        </item>
+
+        <item android:title="Новини"
+            android:id="@+id/news_id"
+            android:icon="@drawable/ic_news">
+        </item>
+
+        <item android:title="Я в небезпеці"
+            android:id="@+id/danger_id"
+            android:icon="@drawable/ic_directions_run">
+        </item>
+
+        <item android:title="Нове порушення"
+            android:id="@+id/new_violatoin_id"
+            android:icon="@drawable/ic_add_circle">
+        </item>
+        <item android:title="Історія фіксацій"
+            android:id="@+id/history_id"
+            android:icon="@drawable/ic_history">
+        </item>
+
+
+        <item android:title="Налаштування"
+            android:id="@+id/settings_id"
+            android:icon="@drawable/ic_settings">
+        </item>
+
+        <item android:title="Вихід"
+            android:id="@+id/exit_id"
+            android:icon="@drawable/ic_exit">
+        </item>
+
+    </group>
+
+    <item android:title="Корисна інформація">
+
+        <menu>
+
+            <!--<item android:title="Правила дорожнього руху"-->
+                <!--android:id="@+id/allmail_id">-->
+                <!--&lt;!&ndash;android:icon="@drawable/allmail">&ndash;&gt;-->
+            <!--</item>-->
+
+            <!--<item android:title="Штрафи за порушення ПДР"-->
+                <!--android:id="@+id/trash_id">-->
+                <!--&lt;!&ndash;android:icon="@drawable/delete">&ndash;&gt;-->
+
+            <!--</item>-->
+            <item android:title="Схеми оформлення ДТП"
+                android:id="@+id/shemy_dtp">
+                <!--android:icon="@drawable/spam">-->
+
+            </item>
+        </menu>
+
+    </item>
+
+</menu>

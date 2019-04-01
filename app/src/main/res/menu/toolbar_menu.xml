@@ -1,0 +1,37 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activities.MainActivity">
+
+    <!--<item-->
+        <!--android:id="@+id/action_search"-->
+        <!--android:title="@string/action_search"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:icon="@drawable/ic_action_search"-->
+        <!--app:showAsAction="ifRoom" />-->
+
+
+    <item
+        android:id="@+id/action_news"
+        android:title="Новини"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_history"
+        android:title="Історія фіксацій"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="Налаштування"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_exit"
+        android:title="Вихід"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+</menu>

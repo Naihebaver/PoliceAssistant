@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+
+    android:id="@+id/rel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:ignore="NamespaceTypo">
+
+
+
+    <naihebaver.policeassistantapp.Camera.CameraSourcePreview
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <naihebaver.policeassistantapp.Camera.GraphicOverlay
+            android:id="@+id/graphicOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </naihebaver.policeassistantapp.Camera.CameraSourcePreview>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/bg_camera">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9">
+
+            <RelativeLayout
+                android:layout_width="32dp"
+                android:layout_height="4dp"
+                android:layout_toRightOf="@+id/rel_cam_left"
+                android:background="@color/colorWhite"></RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="32dp"
+                android:layout_height="4dp"
+                android:layout_toLeftOf="@+id/rel_cam_right"
+                android:background="@color/colorWhite"></RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="32dp"
+                android:layout_height="4dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/rel_cam_left"
+                android:background="@color/colorWhite"></RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="32dp"
+                android:layout_height="4dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/rel_cam_right"
+                android:background="@color/colorWhite"></RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_cam_right"
+                android:layout_width="32dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/bg_camera">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_cam_left"
+                android:layout_width="32dp"
+                android:layout_height="match_parent"
+                android:background="@color/bg_camera">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_11"
+                android:layout_width="4dp"
+                android:layout_height="32dp"
+                android:layout_toRightOf="@+id/rel_cam_left"
+                android:background="@color/colorWhite"></RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_12"
+                android:layout_width="4dp"
+                android:layout_height="32dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/rel_cam_left"
+                android:background="@color/colorWhite"></RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_13"
+                android:layout_width="4dp"
+                android:layout_height="32dp"
+                android:layout_toLeftOf="@+id/rel_cam_right"
+                android:background="@color/colorWhite"></RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_14"
+                android:layout_width="4dp"
+                android:layout_height="32dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/rel_cam_right"
+                android:background="@color/colorWhite"></RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/bg_camera">
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/bg_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.Toolbar>
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="Наведіть камеру на номер автомобіля. Фото буде зроблено автоматично."
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+
+
+    <ImageButton
+        android:id="@+id/btnWrite"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_edit"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        />
+
+    <ImageButton
+        android:id="@+id/btnFlash"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_flash_off"
+        android:layout_gravity="right"
+        android:layout_margin="14dp"
+        />
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_arrow_back"
+        android:layout_gravity="left"
+        android:layout_margin="14dp"
+        />
+
+
+</android.support.design.widget.CoordinatorLayout>

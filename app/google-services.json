@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "994804844239",
+    "firebase_url": "https://policeassistantapp-a8819.firebaseio.com",
+    "project_id": "policeassistantapp-a8819",
+    "storage_bucket": "policeassistantapp-a8819.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:994804844239:android:7ca8f9423c30c5a9",
+        "android_client_info": {
+          "package_name": "naihebaver.policeassistantapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "994804844239-1mm4eitsfjivc3qn9tnkic1lfv73q510.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "naihebaver.policeassistantapp",
+            "certificate_hash": "8fb3a27e001267b8b09f7d624cfaaf9e653df671"
+          }
+        },
+        {
+          "client_id": "994804844239-g44600pt63tjo0mekthcajhtodl5lrkc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqs59pXarPbWOL_MlxCdAco5xd4lZdxN4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "994804844239-g44600pt63tjo0mekthcajhtodl5lrkc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

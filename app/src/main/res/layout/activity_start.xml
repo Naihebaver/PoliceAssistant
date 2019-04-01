@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent_view"
+    android:background="@android:color/white"
+    tools:context=".Activities.StartActivity">
+
+    <include layout="@layout/toolbar_layout"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="99dp"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:text="Онлайн помічник" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="148dp"
+        android:text="Поліцейського"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="230dp"
+        app:srcCompat="@drawable/ic_police2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="49.5"
+            android:text="Реєстрація"
+            android:textSize="16sp"
+            android:textAllCaps="true"
+            android:background="@drawable/custom_bg"
+            android:textColor="@android:color/white"/>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="49.5"
+            android:text="Вхід"
+            android:textSize="16sp"
+            android:textAllCaps="true"
+            android:background="@drawable/custom_bg"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

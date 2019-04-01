@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.RegistrationActivity"
+    android:background="@android:color/white">
+
+    <include layout="@layout/toolbar_layout"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/logUserPhoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/plsman"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/colorPrimary"/>
+
+
+    <EditText
+        android:id="@+id/logPhone"
+        android:background="@drawable/red_edtxt_style"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logUserPhoto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Номер телефону"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/logPassword"
+        android:background="@drawable/red_edtxt_style"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logPhone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Пароль"
+        android:inputType="textPassword" />
+
+
+
+
+    <Button
+        android:id="@+id/logBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/custom_bg"
+        android:textSize="16sp"
+        android:textAllCaps="true"
+        android:text="Вхід"
+        android:textColor="@android:color/white"/>
+
+    <ProgressBar
+        android:id="@+id/logProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logPassword"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.DangerActivity"
+    android:background="@android:color/white">
+    <include layout="@layout/toolbar_layout"/>
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible">
+
+
+
+        <ImageView
+            android:id="@+id/sos_img"
+            android:layout_width="100dp"
+            android:layout_height="93dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="130dp"
+            android:src="@drawable/ic_sos" />
+
+        <TextView
+            android:id="@+id/txtInf"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sos_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textSize="16sp"
+            android:text="Вкажіть номер телефону свого напарника. Після чого ви зможете оперативно повідомити його, якщо Вам загрожуватиме небезпека і потрібна буде допомога!"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/colleaguePhone"
+            android:background="@drawable/red_edtxt_style"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtInf"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+
+            android:hint="Номер телефону колеги"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/confirmBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/custom_bg"
+            android:textSize="16sp"
+            android:textAllCaps="true"
+
+            android:text="Далі"
+            android:letterSpacing=".03"
+            android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtInf2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            android:textSize="16sp"
+            android:text="Натисніть на кнопку нижче якщо Ви в небезпеці і Вам потрібна допомога! "
+            android:textAlignment="center"/>
+
+
+
+        <naihebaver.policeassistantapp.PulsingButton.PulsingButtonView
+            android:id="@+id/pulsing_button"
+            android:layout_below="@+id/txtInf2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-5dp"
+            android:layout_marginStart="-50dp" />
+
+        <TextView
+            android:id="@+id/changePhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="20dp"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

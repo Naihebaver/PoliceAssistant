@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1a237e</color>
+    <color name="colorPrimaryDark">#000051</color>
+    <color name="colorAccent">#1a237e</color>
+    <!--<color name="colorAccent">#b71c1c</color>-->
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorText">#000000</color>
+
+    <color name="colorRed">#c90000</color>
+    <color name="colorGray">#A2A2A2</color>
+    <color name="bg_camera">#66000000</color>
+
+    <color name="color_for_cards">#dadada</color>
+</resources>

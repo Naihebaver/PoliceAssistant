@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="8dp"
+    app:cardBackgroundColor="@color/colorWhite">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Номер автомобіля:"
+                android:textColor="@color/colorText"
+                android:textAllCaps="true"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_reg_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="АА 1234 ВВ"
+                android:textStyle="bold"
+                android:textColor="@color/colorText"
+                android:textSize="16sp" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Тип порушення:"
+            android:textColor="@color/colorText"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/typeOffense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="@color/colorText"
+            android:gravity="center"
+            android:textSize="16sp" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Адреса:"
+                android:textAllCaps="true"
+                android:textColor="@color/colorText"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text=""
+                android:textStyle="bold"
+                android:textColor="@color/colorText"
+                android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

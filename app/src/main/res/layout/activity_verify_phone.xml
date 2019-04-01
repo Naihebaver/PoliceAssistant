@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.VerifyPhoneActivity"
+    android:background="@android:color/white">
+
+    <include layout="@layout/toolbar_layout"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/regUserPhoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="110dp"
+        android:src="@drawable/plsman" />
+
+
+    <TextView
+        android:id="@+id/txtInf1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regUserPhoto"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Зачекайте..."
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/txtInf2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtInf1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:text="На ваш номер телефону було відправлено смс повідомлення із кодом, який необхідно ввести нижче у відповідне поле."
+        android:textAlignment="center"/>
+
+
+    <EditText
+        android:id="@+id/regCodeTxt"
+        android:background="@drawable/red_edtxt_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtInf2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Код підтвердження" />
+
+    <Button
+        android:id="@+id/regBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/custom_bg"
+        android:textSize="16sp"
+        android:textAllCaps="true"
+        android:text="Реєстрація"
+        android:textColor="@android:color/white"/>
+
+    <ProgressBar
+        android:id="@+id/regProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regCodeTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"/>
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SettingsActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout"/>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@color/colorWhite"
+        app:cardBackgroundColor="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Отримувати сповіщення у радіусі:"
+                android:textColor="@color/colorText"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/notify_radius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:cursorVisible="false"
+                android:ems="2"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="км."
+                android:textColor="@color/colorText"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorWhite"
+        app:cardBackgroundColor="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Фіксувати порушення ТЗ з іноземною реєстрацією?"
+                android:textColor="@color/colorText"
+                android:textSize="14sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_group2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <RadioButton
+                    android:id="@+id/radio_foreign_onn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="Так" />
+
+                <RadioButton
+                    android:id="@+id/radio_foreign_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="Ні" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="*Рекомендується відключати даний режим для покращення швидкодії обробки укр. номерних знаків."
+                android:textColor="@color/colorText"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/settingsBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/custom_bg"
+            android:textSize="16sp"
+            android:textAllCaps="true"
+            android:text="Зберегти"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.RegistrationActivity"
+    android:background="@android:color/white">
+
+    <include layout="@layout/toolbar_layout"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/regUserPhoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/ic_policeman" />
+
+    <EditText
+        android:id="@+id/regName"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regUserPhoto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/red_edtxt_style"
+        android:ems="10"
+        android:hint="ПІБ"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/regPhone"
+        android:background="@drawable/red_edtxt_style"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Номер телефону"
+        android:inputType="phone" />
+
+
+    <EditText
+        android:id="@+id/regPassword"
+        android:background="@drawable/red_edtxt_style"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regPhone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Пароль"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/regPassword2"
+        android:background="@drawable/red_edtxt_style"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Пароль ще раз"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/regMail"
+        android:background="@drawable/red_edtxt_style"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regPassword2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="E-mail (не обов'язково)"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/regContinueBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/custom_bg"
+        android:textSize="16sp"
+        android:textAllCaps="true"
+        android:text="Далі"
+        android:textColor="@android:color/white"/>
+
+    <ProgressBar
+        android:id="@+id/regProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regMail"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

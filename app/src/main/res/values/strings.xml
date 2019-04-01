@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Помічник Поліцейського</string>
+
+    <string name="click_me">Зафіксувати порушення</string>
+    <string name="title_activity_login2">Sign in</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="open_drawer">Open navigation drawer</string>
+    <string name="close_drawer">Close navigation_drawer</string>
+
+
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Ocr dependencies cannot be downloaded due to low device storage</string>
+    <string name="title_activity_main">Ocr Detector Sample</string>
+    <string name="ocr_header">Click &quot;Detect Text&quot; to detect text</string>
+    <string name="read_text">Detect Text</string>
+    <string name="auto_focus">Auto Focus</string>
+    <string name="use_flash">Use Flash</string>
+    <string name="ocr_success">Text read successfully</string>
+    <string name="ocr_failure">No text captured</string>
+    <string name="ocr_error">"Error reading text: %1$s"</string>
+
+    <string name="msg_connection_problem">Проблема з підключенням до інтернету!</string>
+    <string name="msg_play_services_problem">Проблема з Google Play Services!</string>
+
+    <string-array name="arr">
+        <item>Невиконання вимог поліцейського</item>
+        <item>Залишення місця ДТП</item>
+        <item>Перевищення швидкості більше ніж на 20 км/год</item>
+        <item>Порушення вимог дорожніх знаківта розмітки проїзної частини</item>
+        <item>Порушення переїзду пішоходних переходів</item>
+        <item>Керування ТЗ, що має технічні несправності</item>
+        <item>Порушення правил проїзду перехресть</item>
+        <item>Порушення правил обгону, безпечної дистанції або інтервалу</item>
+        <item>Проїзд на заборонений сигнал світлофора</item>
+        <item>Розмови по телефону за кермом</item>
+        <item>Керування без посвідчення водія і страхового полісу</item>
+        <item>Не має права керування взагалі або відповідною категорією ТЗ</item>
+        <item>Перевищення швидкості руху більше ніж на 50 км/год</item>
+        <item>Ненадання переваги в русі ТЗ екстренних служб</item>
+        <item>Керування у стані спяніння</item>
+
+    </string-array>
+</resources>
